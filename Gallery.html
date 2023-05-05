@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Gallery</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/offcanvas-navbar/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/css/bootstrap.min.css" 
+    integrity="sha512-8OvTlZ7gI9mkOeSjH2dzY+Kr+yRXJGgAMaJwhZcKrlpK+27XGm//bLrC7c8t1yjK/5q5p5f5BnNtndjI15XhEg==" 
+    crossorigin="anonymous" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" rel="stylesheet">
+    
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      
+      /* Footer */
+      .footer {
+     background-color: black;
+     padding-left: 1px;
+     text-align: center;
+     color: #fff;
+     position: fixed;
+     bottom: 0;
+     width: 100%;
+     z-index: 3;
+    }	
+          
+      /* NavBar */
+    .navbar-nav > .nav-item > .nav-link:hover,
+    .navbar-brand:hover {
+      color: gold !important;
+    }
+
+    .nav-link.brand.active {
+      display: block;
+      margin-left: 10px;
+      color: blue;
+    }
+      /* SideBar */
+    .sidebar {
+	    position: fixed;
+	    height: 100%;
+	    width: 65px;
+	    background-color: white;
+	    z-index: 1;
+	    overflow-x: hidden;
+	    padding-top: 95px;
+    }
+
+    .sidebar a {
+	    display: block;
+	    padding: 5px;
+	    color: white;
+	    font-size: 20px;
+	    transition: all 0.3s ease;
+    }
+
+    .sidebar a:hover {
+	    background-color: #bec2c9;
+    }
+
+    .active {
+	    background-color: rgba(35,35,35,255);
+    }
+
+    .album.py-5.bg-light {
+      padding-left: 55px;
+    }
+    
+    .fw-light {
+      padding-top: 25px;
+    }
+    </style> 
+    <link href="Gallery.css" rel="stylesheet">
+    
+
+  </head>
+
+<body class="bg-light">
+    
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" aria-label="Main navigation" id="myNavbar">
+    <div class="container-fluid">
+      <img src="../MyPortfolio/Image/WD2.jpg" alt="Your Logo" style="height: 50px;">
+      <a class="nav-link brand active" aria-current="page" href="Home.html" data-target="home">
+        <h2>Joel Plumos</h2>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse offcanvas-collapse justify-content-end" id="navbarsExampleDefault">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="Portfolio.html" data-target="portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="Gallery.html" data-target="gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="Contact.html" data-target="contact">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="sidebar navbar-dark bg-dark">
+    <a href="plumosjg@yahoo.com">
+      <img src="../MyPortfolio/Image/email.png" width="35" height="35" alt="Image 1">
+    </a>
+    <a href="+639770386333">
+      <img src="../MyPortfolio/Image/phone.png" width="35" height="35" alt="Image 2">
+    </a>
+    <a href="https://www.linkedin.com/in/joel-plumos-8a6bb21a0/">
+      <img src="../MyPortfolio/Image/link.png" width="35" height="35" alt="Image 4">
+    </a>
+    <a href="https://web.whatsapp.com/+639770386333">
+      <img src="../MyPortfolio/Image/whatsapp.webp" width="35" height="35" alt="Image 5">
+    </a>
+    <a href="#">
+      <img src="../MyPortfolio/Image/FB.png" width="35" height="35" alt="Image 6">
+    </a>
+    <a href="#">
+      <img src="../MyPortfolio/Image/youtube.png" width="35" height="35" alt="Image 7">
+    </a>
+    <a href="#">
+      <img src="../MyPortfolio/Image/viber.png" width="35" height="35" alt="Image 8">
+    </a>
+    <a href="#">
+      <img src="../MyPortfolio/Image/instagram.webp" width="35" height="35" alt="Image 9">
+    </a>
+    <a href="#">
+      <img src="../MyPortfolio/Image/tik.webp" width="35" height="35" alt="Image 10">
+    </a>
+    <a href="#">
+      <img src="../MyPortfolio/Image/github.webp" width="35" height="35" alt="Image 11">
+    </a>
+    <a href="#">
+      <img src="../MyPortfolio/Image/snap.png" width="35" height="35" alt="Image 12">
+    </a>
+    <a href="#">
+      <img src="../MyPortfolio/Image/pinterest.png" width="35" height="35" alt="Image 13">
+    </a>
+    <a href="#">
+      <img src="../MyPortfolio/Image/twit.png" width="35" height="35" alt="Image 14">
+    </a>
+  </div> 
+
+  <main>
+  
+    <div class="row py-lg-5 text-center container">
+      <div class="col-lg-6 col-md-8 mx-auto text-center">
+        <h3 class="fw-light">My Gallery</h3>
+          <p class="lead">My Gallery a collection of my previous works that show craftmanship and talent
+          Whether it's a stunning landscape, a striking portrait, or an eye-catching design, each piece in 
+          my gallery represents a unique creative vision and a dedication to excellence.</p>
+          <a href="../MyPortfolio/Contact.html" class="btn btn-primary my-2">Contact Me</a>  
+      </div>
+    </div>
+  
+    <div class="album py-5 bg-light container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../MyPortfolio/Image/Photo1.jpg" alt="Your Photo" height="180" width="405">
+            <div class="card-body">
+              <p class="card-text">Photo Editing</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="../MyPortfolio/Contact.html" class="btn btn-primary my-2">Contact Me</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <video id="video" width="405" height="180" autoplay muted loop>
+              <source src="../MyPortfolio/Image/ColorSplash.mp4" type="video/mp4" />
+            </video>
+            <div class="card-body">
+              <p class="card-text">Video Editing</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="../MyPortfolio/Contact.html" class="btn btn-primary my-2">Contact Me</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../MyPortfolio/Image/Web.jpg" alt="Your Photo" height="180" width="405">
+            <div class="card-body">
+              <p class="card-text">Web Development Full Stack</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="../MyPortfolio/Contact.html" class="btn btn-primary my-2">Contact Me</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>      
+      </div>
+    </div>
+  </div>
+
+<!-- Footer -->
+<div class="footer">
+	<p>Copyright © 2023 
+	<a href="https://kodego.ph/">KodeGo.ph</a> - All Rights Reserved - WD62P</p>
+</div>
+</main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"></script>
+    <script src="Home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

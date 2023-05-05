@@ -1,0 +1,153 @@
+ /* NavBar */
+ .navbar-nav > .nav-item > .nav-link:hover,
+ .navbar-brand:hover {
+   color: gold !important;
+ }
+
+ .navbar-brand.active {
+   display: block;
+   margin-left: 200px;
+ }
+
+ section {
+   display: none;
+ }
+
+ .active {
+   display: block;
+ }
+ 
+    /* SideBar */
+ .sidebar {
+     position: fixed;
+     top: 0;
+     left: 0;
+     height: 100%;
+     width: 55px;
+     background-color: black;
+     z-index: 2;
+     overflow-x: hidden;
+     padding-top: 80px;
+ }
+
+ .sidebar a {
+     display: block;
+     padding: 5px;
+     color: white;
+     font-size: 20px;
+     transition: all 0.3s ease;
+ }
+
+ .sidebar a:hover {
+     background-color: #bec2c9;
+ }
+
+ .themed-grid-col {
+   padding-left: 130px;
+   padding-right: 100px;
+ }
+
+ .mt-4 {
+   padding-top: 50px;
+ }
+
+ ul.no-bullets {
+   list-style: none;
+ }
+ 
+ /* Footer */
+ .footer {
+     background-color: black;
+     padding: 5px;
+     text-align: center;
+     color: #fff;
+     position: fixed;
+     bottom: 0;
+     width: 100%;
+     z-index: 3;
+ }	
+
+ /* Skill Bar  */
+
+ .skills {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .skill {
+   margin: 10px;
+   width: 400px;
+ }
+
+ .skill h5 {
+   margin-bottom: 10px;
+ }
+
+ .skill-bar {
+   height: 20px;
+   background-color: #ddd;
+   border-radius: 10px;
+   overflow: hidden;
+ }
+
+ .skill-level {
+   height: 100%;
+   width: 0%;
+   background-color: #4CAF50;
+   transition: width 1s ease-in-out;
+ }
+
+ .skill-bar-name {
+   padding-left: 200px;
+ }
+
+ @media screen and (max-width: 780px) {
+ .skill {
+   width: 300px;
+   }
+ }
+
+   /* Space out the Bootstrap <hr> more */
+ .featurette-divider {
+   margin: 1rem 0; 
+ }
+
+   /* Thin out the marketing headings */
+ .featurette-heading {
+ font-weight: 300;
+ line-height: 1;
+   /* rtl:remove */
+ letter-spacing: -.05rem;
+ }
+
+ .row.featurette {
+   padding-left:100px;
+   padding-bottom: 50px;
+ }
+
+ .bd-placeholder-img {
+font-size: 1.125rem;
+text-anchor: middle;
+-webkit-user-select: none;
+-moz-user-select: none;
+user-select: none;
+}
+
+@media (min-width: 768px) {
+.bd-placeholder-img-lg {
+ font-size: 3.5rem;
+}
+}
+
+#canvas-image {
+position: absolute;
+display: block;
+width: 100%;
+height: 100%;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+}
+ 

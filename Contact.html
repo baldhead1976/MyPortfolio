@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Contact</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/offcanvas-navbar/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/css/bootstrap.min.css" 
+    integrity="sha512-8OvTlZ7gI9mkOeSjH2dzY+Kr+yRXJGgAMaJwhZcKrlpK+27XGm//bLrC7c8t1yjK/5q5p5f5BnNtndjI15XhEg==" 
+    crossorigin="anonymous" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" rel="stylesheet">
+    
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      
+      /* Footer */
+      .footer {
+        background-color: black;
+        padding-left: 1px;
+        text-align: center;
+        color: #fff;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 3;
+      }	
+          
+        /* NavBar */
+      .navbar-nav > .nav-item > .nav-link:hover,
+      .navbar-brand:hover {
+        color: gold !important;
+      }
+
+      .nav-link.brand.active {
+        display: block;
+        margin-left: 10px;
+        color: blue;
+      }
+
+       /* SideBar */
+      .sidebar {
+	      position: fixed;
+	      top: 0;
+	      left: 0;
+	      height: 100%;
+	      width: 50px;
+	      background-color: white;
+	      z-index: 1;
+	      overflow-x: hidden;
+	      padding-top: 95px;
+      }
+
+      .sidebar a {
+	      display: block;
+	      padding: 5px;
+	      color: white;
+	      font-size: 20px;
+	      transition: all 0.3s ease;
+      }
+
+      .sidebar a:hover {
+	      background-color: #bec2c9;
+      }
+
+      .active {
+	      background-color: rgba(35,35,35,255);
+      }
+
+      .body {
+	      margin: 0;
+	      padding-right: 10px;
+	      font-family: Arial, sans-serif;
+      }
+
+      @media only screen and (min-width: 768px) {
+        .container > * {
+          flex: 1;
+      }
+
+        .col-40 {
+          flex-basis: 40%;
+          max-width: 40%;
+      }
+
+        .col-60 {
+          flex-basis: 60%;
+          max-width: 60%;
+		      padding-top: 3px;
+      }
+      }
+
+      .col-60 img {
+	      border-radius: 50%;
+	      width: 150px;
+	      height: 150px;
+	      object-fit: cover;
+      }
+
+      .col img {
+        width: 100%;
+        height: auto;
+      }
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 0px;
+        padding-left: 100px;
+      }
+  
+      .sample {
+        padding-left: 75px;
+      }
+
+      .title {
+	      Padding-top: 75px;
+      }
+         
+    </style> 
+    
+    
+
+  </head>
+
+<div class="bg-light">
+    
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" aria-label="Main navigation" id="myNavbar">
+  <div class="container-fluid">
+    <img src="../MyPortfolio/Image/WD2.jpg" alt="Your Logo" style="height: 50px;">
+    <a class="nav-link brand active" aria-current="page" href="../MyPortfolio/Home.html" data-target="home">
+      <h2>Joel Plumos</h2>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse offcanvas-collapse justify-content-end" id="navbarsExampleDefault">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="../MyPortfolio/Portfolio.html" data-target="portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="../MyPortfolio/Gallery.html" data-target="gallery">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="../MyPortfolio/Contact.html" data-target="contact">Contact Me</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar navbar-dark bg-dark">
+  <a href="plumosjg@yahoo.com">
+    <img src="../MyPortfolio/Image/email.png" width="35" height="35" alt="Image 1">
+  </a>
+  <a href="+639770386333">
+    <img src="../MyPortfolio/Image/phone.png" width="35" height="35" alt="Image 2">
+  </a>
+  <a href="https://www.linkedin.com/in/joel-plumos-8a6bb21a0/">
+    <img src="../MyPortfolio/Image/link.png" width="35" height="35" alt="Image 4">
+  </a>
+  <a href="https://web.whatsapp.com/+639770386333">
+    <img src="../MyPortfolio/Image/whatsapp.webp" width="35" height="35" alt="Image 5">
+  </a>
+  <a href="#">
+    <img src="../MyPortfolio/Image/FB.png" width="35" height="35" alt="Image 6">
+  </a>
+  <a href="#">
+    <img src="../MyPortfolio/Image/youtube.png" width="35" height="35" alt="Image 7">
+  </a>
+  <a href="#">
+    <img src="../MyPortfolio/Image/viber.png" width="35" height="35" alt="Image 8">
+  </a>
+  <a href="#">
+    <img src="../MyPortfolio/Image/instagram.webp" width="35" height="35" alt="Image 9">
+  </a>
+  <a href="#">
+    <img src="../MyPortfolio/Image/tik.webp" width="35" height="35" alt="Image 10">
+  </a>
+  <a href="#">
+    <img src="../MyPortfolio/Image/github.webp" width="35" height="35" alt="Image 11">
+  </a>
+  <a href="#">
+    <img src="../MyPortfolio/Image/snap.png" width="35" height="35" alt="Image 12">
+  </a>
+  <a href="#">
+    <img src="../MyPortfolio/Image/pinterest.png" width="35" height="35" alt="Image 13">
+  </a>
+  <a href="#">
+    <img src="../MyPortfolio/Image/twit.png" width="35" height="35" alt="Image 14">
+  </a>
+</div> 
+
+<body>
+    <br/></br>
+    <h2 class="mt-4 align text-center">Contact Me</h2>
+    <div class="row mb-3 justify-content-between">
+      <div class="col-md-6 themed-grid-col">
+          <p><dd><u><b>Contact information:</b></u></dd></p>
+            <ul>
+                <li>Address: #1 Luneta Park Avenue, Metro Manila</li>
+                <li>LandLine Number: PLDT - Never Connected </li>
+                <li>Mobile Number: +63 977 038 6333</li>
+                <li>Email Address: Admin@FullStack.com</li>
+            </ul>
+          <p><dd><u><b>Map and Directions:</b></u></dd></p>         
+        <div>
+          <img src="../MyPortfolio/Image/Luneta.png" Width="500" height="250">
+                <p></p>
+        </div>
+        <div>
+            <p><dd><b>If You Think Your Lost, Well You Are!</b></dd></p>
+        </div> 
+      </div>
+   
+      <div class="col-md-6 themed-grid-col">
+            <p><dd><u><b>Hours of operation:</b></u></dd></p>
+            <ul>
+                <li>
+                   24 Hours a day, 7 Days a week. We Never Close, We don't have a door to close.
+                </li>
+            </ul>
+    
+          <div align="center">
+              <p>If you have any questions or would like to work together, please get in touch.</p>
+              <h2>Contact Me</h2>
+            <form>
+              <label for="name">Name:</label><br>
+              <input type="text" id="name" name="name"><br>
+              <label for="email">Email:</label><br>
+              <input type="email" id="email" name="email"><br>
+              <label for="message">Message:</label><br>
+              <textarea id="message" name="message"></textarea><br>
+              <div class="links">
+                  <a href="https://kodego.ph/">Send</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+            
+    
+
+
+   
+    <!-- Footer -->
+ <div class="footer">
+	<p>Copyright © 2023 
+	<a href="https://kodego.ph/">KodeGo.ph</a> - All Rights Reserved - WD62P</p>
+</div>
+        
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
+
+
+
+    
+
+    

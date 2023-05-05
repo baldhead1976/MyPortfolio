@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Home</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/css/bootstrap.min.css" 
+    integrity="sha512-8OvTlZ7gI9mkOeSjH2dzY+Kr+yRXJGgAMaJwhZcKrlpK+27XGm//bLrC7c8t1yjK/5q5p5f5BnNtndjI15XhEg==" 
+    crossorigin="anonymous" />
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sidebars/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/grid/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/album/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+      
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      [data-text-type="rotate"] {
+        display: inline-block;
+        animation: rotate-text 6s infinite;
+        font-size: 1em;
+      }
+
+      @keyframes rotate-text {
+        0% { opacity: 1; }
+        25% { opacity: 1; }
+        50% { opacity: 0; }
+        75% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+
+      body {
+        font-size: 1em; /* Increase font size to 24 pixels */
+        font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif; /* Optional: Change font family */
+      }
+
+      .imgcontrol {
+        padding-left: 250px;
+        padding-top: 5000px;
+        
+      }
+
+      .video {
+        padding-top: 250px;
+      }
+
+      .text {
+        padding-top: 190px;
+      }
+      
+      .overlay {
+		position:absolute;
+		top:0;
+		left:0;
+		z-index:1;
+		padding-top: 150px;
+		padding-left: 720px;
+		color:#ffcc00
+	}
+
+  /* SideBar */
+ .sidebar {
+     position: fixed;
+     top: 0;
+     left: 0;
+     height: 100%;
+     width: 55px;
+     background-color: black;
+     z-index: 2;
+     overflow-x: hidden;
+     padding-top: 80px;
+ }
+
+ .sidebar a {
+     display: block;
+     padding: 5px;
+     color: white;
+     font-size: 20px;
+     transition: all 0.3s ease;
+ }
+
+ .sidebar a:hover {
+     background-color: #bec2c9;
+ }
+
+ /* Footer */
+ .footer {
+     background-color: black;
+     padding: 5px;
+     text-align: center;
+     color: #fff;
+     position: fixed;
+     bottom: 0;
+     width: 100%;
+     z-index: 3;
+ }	
+    
+
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="grid.css" rel="stylesheet">
+  </head>
+  <body class="py-4">
+    
+<main>
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" aria-label="Main navigation" id="myNavbar">
+        <div class="container-fluid">
+          <img src="../MyPortfolio/Image/WD2.jpg" alt="Your Logo" style="height: 50px;">
+          <a class="nav-link brand active" aria-current="page" href="../MyPortfolio/Home.html" data-target="home">
+            <h2>Joel Plumos</h2>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse offcanvas-collapse justify-content-end" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../MyPortfolio/Portfolio.html" data-target="portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../MyPortfolio/Gallery.html" data-target="gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../MyPortfolio/Contact.html" data-target="contact">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="sidebar navbar-dark bg-dark">
+        <a href="plumosjg@yahoo.com">
+          <img src="../MyPortfolio/Image/email.png" width="35" height="35" alt="Image 1">
+        </a>
+        <a href="+639770386333">
+          <img src="../MyPortfolio/Image/phone.png" width="35" height="35" alt="Image 2">
+        </a>
+        <a href="https://www.linkedin.com/in/joel-plumos-8a6bb21a0/">
+          <img src="../MyPortfolio/Image/link.png" width="35" height="35" alt="Image 4">
+        </a>
+        <a href="https://web.whatsapp.com/+639770386333">
+          <img src="../MyPortfolio/Image/whatsapp.webp" width="35" height="35" alt="Image 5">
+        </a>
+        <a href="#">
+          <img src="../MyPortfolio/Image/FB.png" width="35" height="35" alt="Image 6">
+        </a>
+        <a href="#">
+          <img src="../MyPortfolio/Image/youtube.png" width="35" height="35" alt="Image 7">
+        </a>
+        <a href="#">
+          <img src="../MyPortfolio/Image/viber.png" width="35" height="35" alt="Image 8">
+        </a>
+        <a href="#">
+          <img src="../MyPortfolio/Image/instagram.webp" width="35" height="35" alt="Image 9">
+        </a>
+        <a href="#">
+          <img src="../MyPortfolio/Image/tik.webp" width="35" height="35" alt="Image 10">
+        </a>
+        <a href="#">
+          <img src="../MyPortfolio/Image/github.webp" width="35" height="35" alt="Image 11">
+        </a>
+        <a href="#">
+          <img src="../MyPortfolio/Image/snap.png" width="35" height="35" alt="Image 12">
+        </a>
+        <a href="#">
+          <img src="../MyPortfolio/Image/pinterest.png" width="35" height="35" alt="Image 13">
+        </a>
+        <a href="#">
+          <img src="../MyPortfolio/Image/twit.png" width="35" height="35" alt="Image 14">
+        </a>
+      </div> 
+</main>
+<div>
+    <div class="container">
+        <div class="row mb-3">
+            <div class="col-md-6 themed-grid-col">
+                <div class="text">
+                    <h1><b>We do the work that</b></h1>
+                    <div class="rotate">    
+                        <h1><b>makes</b><span class="letter-load-in start-loading is-empty" aria-hidden="true"></span>
+                        <span data-text-type="rotate" data-rotate-text-two="industries " data-rotate-text-three="the world " aria-label="business " style="opacity: 1;"> website </span></h1>
+                    </div>
+                    <h1><b>work better <u> for people ! </u></b></h1>
+                    <a class="imgcontrol">
+                      <img src="../MyPortfolio/Image/Swipe.svg" width="300" height="325" alt="Swipe">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 themed-grid-col">
+                <div class="video">
+                    <video id="video" width="700" height="300" autoplay muted loop>
+                        <source src="../MyPortfolio/Image/Meeting.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                <div class="overlay">
+                    <div class="image">
+                        <a class="imageControl"><img src="../MyPortfolio/Image/LOGO.png" width="710" height="500" alt="Swipe"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <!-- Footer -->
+ <div class="footer">
+	<p>Copyright © 2023 
+	<a href="https://kodego.ph/">KodeGo.ph</a> - All Rights Reserved - WD62P</p>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper-base.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+    
+    <!-- Add JavaScript link for Bootstrap -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+    $(document).ready(function() {
+      var words = ['industries', 'the world', 'business'];
+      var index = 0;
+      var intervalId = setInterval(function() {
+        $('h1.rotate span[aria-label="business"]').fadeOut(500, function() {
+          $(this).text(words[index]);
+          index++;
+          if (index === words.length) {
+            index = 0;
+          }
+          $(this).fadeIn(500);
+        });
+      }, 3000);
+    });
+    </script>
+    
+
+
+</body>
+</html>   

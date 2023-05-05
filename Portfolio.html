@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Portfolio</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/offcanvas-navbar/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/css/bootstrap.min.css" 
+    integrity="sha512-8OvTlZ7gI9mkOeSjH2dzY+Kr+yRXJGgAMaJwhZcKrlpK+27XGm//bLrC7c8t1yjK/5q5p5f5BnNtndjI15XhEg==" 
+    crossorigin="anonymous" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" rel="stylesheet">
+    
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      /* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #5a5a5a;
+  }
+
+  /* Featurettes
+  ------------------------- */
+  
+  .featurette-divider {
+    margin: 1rem 0; /* Space out the Bootstrap <hr> more */
+  }
+  
+  /* Thin out the marketing headings */
+  .featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    /* rtl:remove */
+    letter-spacing: -.05rem;
+    
+  }
+  
+  
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
+  
+  @media (min-width: 40em) {
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+  
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 0rem;
+    }
+  }
+  
+  /* NavBar */
+  .navbar-nav > .nav-item > .nav-link:hover,
+      .navbar-brand:hover {
+        color: gold !important;
+      }
+
+      .nav-link.brand.active {
+        display: block;
+        margin-left: 10px;
+        color: blue;
+      }
+
+      /* SideBar */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 55px;
+      background-color: black;
+      z-index: 2;
+      overflow-x: hidden;
+      padding-top: 80px;
+     }
+
+    .sidebar a {
+      display: block;
+      padding: 5px;
+      color: white;
+      font-size: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .sidebar a:hover {
+      background-color: #bec2c9;
+    }
+
+      /* Footer */
+    .footer {
+      background-color: black;
+      padding: 5px;
+      text-align: center;
+      color: #fff;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      z-index: 3;
+    }	
+  
+    .row.featurette {
+      padding-left: 70px;
+    }
+
+            /* Skill Bar  */
+          .skills {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+
+          .skill {
+            margin: 10px;
+            width: 400px;
+          }
+
+          .skill h5 {
+            margin-bottom: 10px;
+          }
+
+          .skill-bar {
+            height: 20px;
+            background-color: #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+          }
+
+          .skill-level {
+            height: 100%;
+            width: 93.5%;
+            background-color: #4CAF50;
+            transition: width 1s ease-in-out;
+          }
+
+          .skill-bar-name {
+            padding-left: 100px;
+          }
+
+          @media screen and (max-width: 780px) {
+          .skill {
+            width: 300px;
+            }
+          }
+
+           
+    </style> 
+    
+    
+
+  </head>
+
+<body class="bg-light">
+    
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" aria-label="Main navigation" id="myNavbar">
+    <div class="container-fluid">
+      <img src="../MyPortfolio/Image/WD2.jpg" alt="Your Logo" style="height: 50px;">
+      <a class="nav-link brand active" aria-current="page" href="../MyPortfolio/Home.html" data-target="home">
+        <h2>Joel Plumos</h2>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse offcanvas-collapse justify-content-end" id="navbarsExampleDefault">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../MyPortfolio/Portfolio.html" data-target="portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../MyPortfolio/Gallery.html" data-target="gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../MyPortfolio/Contact.html" data-target="contact">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="sidebar navbar-dark bg-dark">
+    <a href="plumosjg@yahoo.com">
+      <img src="../MyPortfolio/Image/email.png" width="35" height="35" alt="Image 1">
+    </a>
+    <a href="+639770386333">
+      <img src="../MyPortfolio/Image/phone.png" width="35" height="35" alt="Image 2">
+    </a>
+    <a href="https://www.linkedin.com/in/joel-plumos-8a6bb21a0/">
+      <img src="../MyPortfolio/Image/link.png" width="35" height="35" alt="Image 4">
+    </a>
+    <a href="https://web.whatsapp.com/+639770386333">
+      <img src="../MyPortfolio/Image/whatsapp.webp" width="35" height="35" alt="Image 5">
+    </a>
+    <a href="#">
+      <img src="../MyPortfolio/Image/FB.png" width="35" height="35" alt="Image 6">
+    </a>
+    <a href="#">
+      <img src="../MyPortfolio/Image/youtube.png" width="35" height="35" alt="Image 7">
+    </a>
+    <a href="#">
+      <img src="../MyPortfolio/Image/viber.png" width="35" height="35" alt="Image 8">
+    </a>
+    <a href="#">
+      <img src="../MyPortfolio/Image/instagram.webp" width="35" height="35" alt="Image 9">
+    </a>
+    <a href="#">
+      <img src="../MyPortfolio/Image/tik.webp" width="35" height="35" alt="Image 10">
+    </a>
+    <a href="#">
+      <img src="../MyPortfolio/Image/github.webp" width="35" height="35" alt="Image 11">
+    </a>
+    <a href="#">
+      <img src="../MyPortfolio/Image/snap.png" width="35" height="35" alt="Image 12">
+    </a>
+    <a href="#">
+      <img src="../MyPortfolio/Image/pinterest.png" width="35" height="35" alt="Image 13">
+    </a>
+    <a href="#">
+      <img src="../MyPortfolio/Image/twit.png" width="35" height="35" alt="Image 14">
+    </a>
+  </div> 
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Hello, I'am Joel Plumos</h2>
+        <p class="lead" align="justify">As a photographer and videographer, I have worked on a wide range of 
+          projects and have experience with various styles and genres of photography and videography. 
+          I have the technical knowledge and creativity necessary to produce compelling visuals that align 
+          with a client's brand and vision. My portfolio includes work for corporate clients, small businesses, 
+          and individuals.</p>
+    
+        <p class="lead" align="justify">As a web developer full stack with WordPress, I have extensive 
+          experience creating and customizing websites for clients across various industries. I am proficient 
+          in HTML, CSS, JavaScript, and PHP, and have a deep understanding of WordPress, including theme and 
+          plugin development. I am also comfortable working with e-commerce platforms and have experience with 
+          WooCommerce.</p>
+          
+        <p class="lead" align="justify">In addition to my technical skills, I have excellent project 
+          management and communication skills. I understand the importance of meeting deadlines and 
+          working collaboratively with clients to ensure that their vision is realized. I am also 
+          comfortable working independently and am able to troubleshoot issues as they arise.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="../MyPortfolio/Image/Marines No BG.png" alt="Your Photo" height="600" width="500">
+    
+      </div>
+    </div>
+    
+    <hr class="featurette-divider">
+    
+    <hr class="featurette-divider">
+                  <div class="row featurette">
+                    <div class="col-md-7 order-md-2">
+                      <h2 class="featurette-heading">About Me</h2>
+                      <div>
+                        <p></p>
+                        <h4>Joel G. Plumos</h4>
+                        <h6>Web Developer Skills</h6>
+                      </div>
+                                          
+                      <div>HTML, CSS, JavaScript, PHP, MySQL </div>
+                      
+                      <div>
+                        <h4>Experience</h4>
+                        <h6>Web Developer Full Stack Developer - Microsoft company</h6>
+                        <p><em>January 2020 - Present</em></p>
+                        <ul>
+                          <li>Developed and maintained company website using HTML, CSS, and JavaScript</li>
+                          <li>Collaborated with marketing team to create and implement digital marketing campaigns</li>
+                          <li>Managed and maintained company blog, including writing and editing blog posts</li>
+                        </ul>
+                        
+                        <h6>Web Developer (WordPress) - Warrior Brand</h6>
+                        <p><em>January 2020 - December 2020</em></p>
+                        <ul>
+                          <li>Developed and maintained e-commerce website using Magento</li>
+                          <li>Managed website content, including product descriptions, images, and pricing</li>
+                          <li>Worked with graphic design team to create website graphics and promotional materials</li>
+                        </ul>
+                      </div>
+                      
+                      <div>
+                        <h4>Education</h4>
+                        <h6>Bachelor of Science in Architecture - Far Eastern University</h6>
+                        <p><em>Graduated March 2000</em></p>
+                        <h6>Bachelor of Science in Information Technology - KodeGo University</h6>
+                        <p><em>Graduated August 2023</em></p>
+                        <ul>
+                          <li>Coursework included programming, web development, and database design</li>
+                          <li>Recipient of KodeGo Scholarship for academic achievement</li>
+                        </ul>
+                      </div>                  
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                      <div class="skills">
+                        <div class="skill">
+                          <h5>Photography</h5>
+                          <div class="skill-bar">
+                            <div class="skill-level" data-level="97%"><p align="center">97%</p></div>
+                          </div>
+                        </div>
+                        <div class="skill">
+                          <h5>Videography</h5>
+                          <div class="skill-bar">
+                            <div class="skill-level" data-level="94%"><p align="center">94%</p></div>
+                          </div>
+                        </div>
+                        <div class="skill">
+                          <h5>Web Development</h5>
+                          <div class="skill-bar">
+                            <div class="skill-level" data-level="90%"><p align="center">90%</p></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>    
+                  </div>
+    <br/>
+
+    <!-- Footer -->
+ <div class="footer">
+	<p>Copyright © 2023 
+	<a href="https://kodego.ph/">KodeGo.ph</a> - All Rights Reserved - WD62P</p>
+</div>
+</main>
+        
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
+        
