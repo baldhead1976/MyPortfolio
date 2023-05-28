@@ -41,12 +41,18 @@
         font-size: 1em;
       }
 
-      @keyframes rotate-text {
-        0% { opacity: 1; }
-        25% { opacity: 1; }
-        50% { opacity: 0; }
-        75% { opacity: 0; }
-        100% { opacity: 1; }
+      @keyframes rotate-words {
+          0% { opacity: 1; }
+          16.6% { opacity: 0; }
+          33.3% { opacity: 0; }
+          50% { opacity: 0; }
+          66.6% { opacity: 0; }
+          83.3% { opacity: 0; }
+          100% { opacity: 1; }
+      }
+
+      .rotate [data-text-type="rotate"] {
+          animation: rotate-words 8s infinite;
       }
 
       body {
@@ -194,35 +200,40 @@
       </div> 
 </main>
 <div>
-    <div class="container">
-        <div class="row mb-3">
-            <div class="col-md-6 themed-grid-col">
-                <div class="text">
-                    <h1><b>We do the work that</b></h1>
-                    <div class="rotate">    
-                        <h1><b>makes</b><span class="letter-load-in start-loading is-empty" aria-hidden="true"></span>
-                        <span data-text-type="rotate" data-rotate-text-two="industries " data-rotate-text-three="the world " aria-label="business " style="opacity: 1;"> website </span></h1>
-                    </div>
-                    <h1><b>work better <u> for people ! </u></b></h1>
-                    <a class="imgcontrol">
-                      <img src="../MyPortfolio/Image/Swipe.svg" width="300" height="325" alt="Swipe">
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6 themed-grid-col">
-                <div class="video">
-                    <video id="video" width="700" height="300" autoplay muted loop>
-                        <source src="../MyPortfolio/Image/Meeting.mp4" type="video/mp4" />
-                    </video>
-                </div>
-                <div class="overlay">
-                    <div class="image">
-                        <a class="imageControl"><img src="../MyPortfolio/Image/LOGO.png" width="710" height="500" alt="Swipe"></a>
-                    </div>
-                </div>
-            </div>
+  <div class="container">
+    <div class="row mb-3">
+      <div class="col-md-6 themed-grid-col">
+        <div class="text">
+          <h1><b>We do the work that</b></h1>
+          <div class="rotate">
+            <h1>
+              <b>makes</b>
+              <span class="letter-load-in start-loading is-empty" aria-hidden="true"></span>
+              <span data-text-type="rotate" data-rotate-text-one="industries" data-rotate-text-two="the world" data-rotate-text-three="business" aria-label="business" style="opacity: 1;">business</span>
+            </h1>
+          </div>
+          <h1><b>work better <u>for people!</u></b></h1>
+          <a class="imgcontrol">
+            <img id="swipeImage" src="../MyPortfolio/Image/Swipe.svg" width="300" height="325" alt="Swipe">
+          </a>
         </div>
+      </div>
+      <div class="col-md-6 themed-grid-col">
+        <div class="video">
+          <video id="video" width="700" height="300" autoplay muted loop>
+            <source src="../MyPortfolio/Image/Meeting.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="overlay">
+          <div class="image">
+            <a class="imageControl"><img src="../MyPortfolio/Image/LOGO.png" width="710" height="500" alt="Swipe"></a>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+</div>
+
 
  <!-- Footer -->
  <div class="footer">
@@ -262,3 +273,4 @@
 
 </body>
 </html> 
+
