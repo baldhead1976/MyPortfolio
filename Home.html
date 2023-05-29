@@ -20,7 +20,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
-      
+    
+    <!-- Add the Swiper.js library -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -35,35 +39,79 @@
           font-size: 3.5rem;
         }
       }
-      [data-text-type="rotate"] {
-        display: inline-block;
-        animation: rotate-text 6s infinite;
-        font-size: 1em;
+
+      .wrapper {
+        box-sizing: content-box;
+        height: 50px;
+        padding-left: 50px;
+        display: flex;
       }
 
-      @keyframes rotate-words {
-          0% { opacity: 1; }
-          16.6% { opacity: 0; }
-          33.3% { opacity: 0; }
-          50% { opacity: 0; }
-          66.6% { opacity: 0; }
-          83.3% { opacity: 0; }
-          100% { opacity: 1; }
+      .words {
+        overflow: hidden;
+      }
+      
+      span {
+        display: block;
+        height: 100%;
+        padding-left: 150px;
+        animation: spin_words 15s infinite;
       }
 
-      .rotate [data-text-type="rotate"] {
-          animation: rotate-words 8s infinite;
+      @keyframes spin_words {
+          33.33% { 
+                transform: translateY(-100%);
+          }
+          66.66% { 
+                transform: translateY(-200%);
+          }
+          99.99% { 
+                transform: translateY(-300%);
+          }
+        }
+
+      .swipe-container {
+          position: relative;
+          width: 250px;
+          height: 325px;
+          
       }
+
+      #swipe-content {
+          position: relative;
+          top: -60px;
+          left: 275px;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          animation: swipe-animation 25s ;
+      }
+
+      @keyframes swipe-animation {
+        0% {
+      transform: translateX(-100%);
+      opacity: 0;
+      }
+      45% {opacity: 0;}
+      50% {opacity: 0.5;}
+      75% {opacity: 0.75;}
+      100% {opacity: 1;}
+      195% {opacity: 1;}
+      200% {opacity: 1;}
+      300% {
+      transform: translateX(100%);
+      opacity: 1;
+    }
+    }
+
+
+  .swipe-container.visible {
+    animation: swipe-delay 5s forwards;
+  }
 
       body {
-        font-size: 1em; /* Increase font size to 24 pixels */
-        font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif; /* Optional: Change font family */
-      }
-
-      .imgcontrol {
-        padding-left: 250px;
-        padding-top: 5000px;
-        
+        font-size: 1em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif; 
       }
 
       .video {
@@ -205,17 +253,21 @@
       <div class="col-md-6 themed-grid-col">
         <div class="text">
           <h1><b>We do the work that</b></h1>
-          <div class="rotate">
-            <h1>
+          
+          <div class="wrapper">
+            <div class="words">
+              <h1>
               <b>makes</b>
-              <span class="letter-load-in start-loading is-empty" aria-hidden="true"></span>
-              <span data-text-type="rotate" data-rotate-text-one="industries" data-rotate-text-two="the world" data-rotate-text-three="business" aria-label="business" style="opacity: 1;">business</span>
-            </h1>
+              <span> industries</span>
+              <span> the world</span>
+              <span> business</span>
+              </h1>
+            </div>
           </div>
-          <h1><b>work better <u>for people!</u></b></h1>
-          <a class="imgcontrol">
-            <img id="swipeImage" src="../MyPortfolio/Image/Swipe.svg" width="300" height="325" alt="Swipe">
-          </a>
+          <h1><b>work better for people!</b></h1>
+          <div class="swipe-container">
+            <img id="swipe-content" src="../MyPortfolio/Image/Swipe.svg" width="250" height="325" alt="Swipe">
+          </div>
         </div>
       </div>
       <div class="col-md-6 themed-grid-col">
@@ -226,7 +278,9 @@
         </div>
         <div class="overlay">
           <div class="image">
-            <a class="imageControl"><img src="../MyPortfolio/Image/LOGO.png" width="710" height="500" alt="Swipe"></a>
+            <a class="imageControl">
+              <img src="../MyPortfolio/Image/LOGO.png" width="710" height="500" alt="Swipe">
+            </a>
           </div>
         </div>
       </div>
@@ -242,31 +296,21 @@
 </div>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper-base.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
     
     <!-- Add JavaScript link for Bootstrap -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script>
-    $(document).ready(function() {
-      var words = ['industries', 'the world', 'business'];
-      var index = 0;
-      var intervalId = setInterval(function() {
-        $('h1.rotate span[aria-label="business"]').fadeOut(500, function() {
-          $(this).text(words[index]);
-          index++;
-          if (index === words.length) {
-            index = 0;
-          }
-          $(this).fadeIn(500);
-        });
-      }, 3000);
-    });
+      setTimeout(function() {
+        var swipeContainer = document.querySelector('.swipe-container');
+        swipeContainer.classList.add('visible');
+        }, 35000);
     </script>
     
 
